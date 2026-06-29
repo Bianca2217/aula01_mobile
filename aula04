@@ -1,0 +1,57 @@
+// Exercício 1
+let cidades = ["Cascavel", "Curitiba", "Londrina", "Maringá"];
+
+cidades.forEach(cidade => {
+    console.log("Cidade: " + cidade);
+});
+
+
+// Exercício 2
+let numeros = [1, 2, 3, 4, 5];
+
+let dobro = numeros.map(numero => {
+    return numero * 2;
+});
+
+console.log(dobro);
+console.log(numeros);
+
+
+// Exercício 3
+let precos = [100, 200, 300, 400];
+
+let desconto = precos.map(preco => {
+    return preco * 0.9;
+});
+
+console.log(desconto);
+
+
+// Exercício 4
+let idades = [12, 18, 20, 15, 30, 17];
+
+let maioresIdade = idades.filter(idade => {
+    return idade >= 18;
+});
+
+console.log(maioresIdade);
+
+
+// Exercício 5
+let nomes = ["ana", "joao", "maria", "pedro"];
+
+let nomesMaiusculos = nomes.map(nome => {
+    return nome.toUpperCase();
+});
+
+console.log(nomesMaiusculos);
+
+
+// Exercício 6
+let palavras = ["casa", "computador", "sol", "javascript", "mesa"];
+
+let resultado = palavras
+    .filter(palavra => palavra.length > 4)
+    .map(palavra => palavra.toUpperCase());
+
+console.log(resultado);
